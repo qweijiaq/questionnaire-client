@@ -1,13 +1,20 @@
 .list {
+  /* 设置内边距为 0 */
   padding: 0;
+  /* 设置列表样式为无 */
   list-style-type: none;
 }
 
+/* 垂直列表项样式 */
 .verticalItem {
+  /* 底部外边距为 10px */
   margin-bottom: 10px;
 }
 
+/* 水平列表项样式 */
 .horizontalItem {
+  /* 行内块元素显示 */
   display: inline-block;
+  /* 右外边距为 10px */
   margin-right: 10px;
 }

@@ -1,278 +1,279 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  /* min-height: 100vh; */
+  display: flex; /* 使用 flex 布局 */
+  flex-direction: column; /* 主轴方向为垂直方向 */
+  justify-content: space-between; /* 主轴上元素分散对齐 */
+  align-items: center; /* 交叉轴上元素居中对齐 */
+  padding: 6rem; /* 设置内边距 */
+  /* min-height: 100vh; */ /* 最小高度占据视口高度 */
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  display: inherit; /* 继承父级 display 属性 */
+  justify-content: inherit; /* 继承父级 justify-content 属性 */
+  align-items: inherit; /* 继承父级 align-items 属性 */
+  font-size: 0.85rem; /* 设置字体大小 */
+  max-width: var(--max-width); /* 设置最大宽度 */
+  width: 100%; /* 宽度占据父级容器宽度 */
+  z-index: 2; /* 设置层级 */
+  font-family: var(--font-mono); /* 设置字体 */
 }
 
 .description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center; /* 元素居中对齐 */
+  align-items: center; /* 元素居中对齐 */
+  gap: 0.5rem; /* 设置间距 */
 }
 
 .description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  position: relative; /* 相对定位 */
+  margin: 0; /* 设置外边距 */
+  padding: 1rem; /* 设置内边距 */
+  background-color: rgba(var(--callout-rgb), 0.5); /* 设置背景颜色 */
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3); /* 设置边框 */
+  border-radius: var(--border-radius); /* 设置边框圆角 */
 }
 
+/* 添加注释 */
 .code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+  font-weight: 700; /* 设置字体粗细 */
+  font-family: var(--font-mono); /* 设置字体 */
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  display: grid; /* 使用 grid 布局 */
+  grid-template-columns: repeat(4, minmax(25%, auto)); /* 设置网格列布局 */
+  width: var(--max-width); /* 设置宽度 */
+  max-width: 100%; /* 最大宽度占满父级容器 */
 }
 
 .card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  padding: 1rem 1.2rem; /* 设置内边距 */
+  border-radius: var(--border-radius); /* 设置边框圆角 */
+  background: rgba(var(--card-rgb), 0); /* 设置背景颜色及透明度 */
+  border: 1px solid rgba(var(--card-border-rgb), 0); /* 设置边框及透明度 */
+  transition: background 200ms, border 200ms; /* 添加过渡效果 */
 }
 
 .card span {
-  display: inline-block;
-  transition: transform 200ms;
+  display: inline-block; /* 行内块元素 */
+  transition: transform 200ms; /* 添加过渡效果 */
 }
 
 .card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+  font-weight: 600; /* 设置字体粗细 */
+  margin-bottom: 0.7rem; /* 设置下外边距 */
 }
 
 .card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+  margin: 0; /* 设置外边距 */
+  opacity: 0.6; /* 设置透明度 */
+  font-size: 0.9rem; /* 设置字体大小 */
+  line-height: 1.5; /* 设置行高 */
+  max-width: 30ch; /* 设置最大宽度 */
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center; /* 元素居中对齐 */
+  align-items: center; /* 元素居中对齐 */
+  position: relative; /* 相对定位 */
+  padding: 4rem 0; /* 设置内边距 */
 }
 
 .center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+  background: var(--secondary-glow); /* 设置背景颜色 */
+  border-radius: 50%; /* 设置边框圆角 */
+  width: 480px; /* 设置宽度 */
+  height: 360px; /* 设置高度 */
+  margin-left: -400px; /* 设置左外边距 */
 }
 
 .center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+  background: var(--primary-glow); /* 设置背景颜色 */
+  width: 240px; /* 设置宽度 */
+  height: 180px; /* 设置高度 */
+  z-index: -1; /* 设置层级 */
 }
 
 .center::before,
 .center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  content: ""; /* 生成伪元素 */
+  left: 50%; /* 距离左边界50%处 */
+  position: absolute; /* 绝对定位 */
+  filter: blur(45px); /* 设置模糊效果 */
+  transform: translateZ(0); /* 开启 3D 加速 */
 }
 
 .logo,
 .thirteen {
-  position: relative;
+  position: relative; /* 相对定位 */
 }
 
 .thirteen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75px;
-  height: 75px;
-  padding: 25px 10px;
-  margin-left: 16px;
-  transform: translateZ(0);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: 0px 2px 8px -1px #0000001a;
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center; /* 元素居中对齐 */
+  align-items: center; /* 元素居中对齐 */
+  width: 75px; /* 设置宽度 */
+  height: 75px; /* 设置高度 */
+  padding: 25px 10px; /* 设置内边距 */
+  margin-left: 16px; /* 设置左外边距 */
+  transform: translateZ(0); /* 开启 3D 加速 */
+  border-radius: var(--border-radius); /* 设置边框圆角 */
+  overflow: hidden; /* 溢出隐藏 */
+  box-shadow: 0px 2px 8px -1px #0000001a; /* 设置阴影 */
 }
 
 .thirteen::before,
 .thirteen::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
+  content: ""; /* 生成伪元素 */
+  position: absolute; /* 绝对定位 */
+  z-index: -1; /* 设置层级 */
 }
 
 /* Conic Gradient Animation */
 .thirteen::before {
-  animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
-  background: var(--tile-border);
+  animation: 6s rotate linear infinite; /* 设置动画 */
+  width: 200%; /* 设置宽度 */
+  height: 200%; /* 设置高度 */
+  background: var(--tile-border); /* 设置背景颜色 */
 }
 
 /* Inner Square */
 .thirteen::after {
-  inset: 0;
-  padding: 1px;
-  border-radius: var(--border-radius);
+  inset: 0; /* 距离各边界距离为0 */
+  padding: 1px; /* 设置内边距 */
+  border-radius: var(--border-radius); /* 设置边框圆角 */
   background: linear-gradient(
-    to bottom right,
+    /* 设置背景为线性渐变 */ to bottom right,
     rgba(var(--tile-start-rgb), 1),
     rgba(var(--tile-end-rgb), 1)
   );
-  background-clip: content-box;
+  background-clip: content-box; /* 仅显示内容区域 */
 }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    background: rgba(var(--card-rgb), 0.1); /* 设置背景颜色及透明度 */
+    border: 1px solid rgba(var(--card-border-rgb), 0.15); /* 设置边框及透明度 */
   }
 
   .card:hover span {
-    transform: translateX(4px);
+    transform: translateX(4px); /* 元素向右平移4像素 */
   }
 }
 
 @media (prefers-reduced-motion) {
   .thirteen::before {
-    animation: none;
+    animation: none; /* 禁用动画 */
   }
 
   .card:hover span {
-    transform: none;
+    transform: none; /* 取消元素的平移 */
   }
 }
 
 /* Mobile */
 @media (max-width: 700px) {
   .content {
-    padding: 4rem;
+    padding: 4rem; /* 设置内边距 */
   }
 
   .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+    grid-template-columns: 1fr; /* 设置网格列布局 */
+    margin-bottom: 120px; /* 设置下外边距 */
+    max-width: 320px; /* 设置最大宽度 */
+    text-align: center; /* 文本居中 */
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem; /* 设置内边距 */
   }
 
   .card h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* 设置下外边距 */
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 8rem 0 6rem; /* 设置内边距 */
   }
 
   .center::before {
-    transform: none;
-    height: 300px;
+    transform: none; /* 取消元素的平移 */
+    height: 300px; /* 设置高度 */
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* 设置字体大小 */
   }
 
   .description a {
-    padding: 1rem;
+    padding: 1rem; /* 设置内边距 */
   }
 
   .description p,
   .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 元素居中对齐 */
+    position: fixed; /* 固定定位 */
+    width: 100%; /* 宽度占据父级容器宽度 */
   }
 
   .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+    align-items: center; /* 元素居中对齐 */
+    inset: 0 0 auto; /* 定位于视口中央 */
+    padding: 2rem 1rem 1.4rem; /* 设置内边距 */
+    border-radius: 0; /* 取消边框圆角 */
+    border: none; /* 取消边框 */
+    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25); /* 设置底部边框 */
     background: linear-gradient(
-      to bottom,
+      /* 设置背景为线性渐变 */ to bottom,
       rgba(var(--background-start-rgb), 1),
       rgba(var(--callout-rgb), 0.5)
     );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+    background-clip: padding-box; /* 仅显示 padding 区域 */
+    backdrop-filter: blur(24px); /* 设置背景模糊 */
   }
 
   .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
+    align-items: flex-end; /* 元素底部对齐 */
+    pointer-events: none; /* 鼠标事件穿透 */
+    inset: auto 0 0; /* 定位于底部 */
+    padding: 2rem; /* 设置内边距 */
+    height: 200px; /* 设置高度 */
     background: linear-gradient(
-      to bottom,
+      /* 设置背景为线性渐变 */ to bottom,
       transparent 0%,
       rgb(var(--background-end-rgb)) 40%
     );
-    z-index: 1;
+    z-index: 1; /* 设置层级 */
   }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%); /* 设置网格列布局 */
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+    filter: invert(1); /* 图片反色 */
   }
 
   .logo,
   .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70); /* 图片反色并添加阴影 */
   }
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* 旋转360度 */
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* 旋转0度 */
   }
 }

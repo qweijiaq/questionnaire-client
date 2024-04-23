@@ -1,11 +1,32 @@
 .inputWrapper {
+  /**
+   * 底部外边距
+   */
   margin-bottom: 16px;
+  /**
+   * 内边距
+   */
   padding: 0 5px;
 
+  /**
+   * 输入框样式
+   */
   input {
+    /**
+     * 宽度
+     */
     width: 100%;
+    /**
+     * 边框样式
+     */
     border: 1px solid #d8d8d8;
+    /**
+     * 边框圆角
+     */
     border-radius: 3px;
+    /**
+     * 内边距
+     */
     padding: 6px 12px;
   }
 }
